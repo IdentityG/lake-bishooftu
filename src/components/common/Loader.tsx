@@ -27,7 +27,6 @@ export default function Loader() {
         },
       });
 
-      // Logo & rings
       tl.to(logoRef.current, { opacity: 1, scale: 1, duration: 0.5, ease: 'power4.out' })
         .to(
           ringRefs.current,
@@ -52,7 +51,7 @@ export default function Loader() {
           '-=0.3'
         )
         .to(textRef.current, { opacity: 1, y: 0, duration: 0.3 }, '-=0.3');
-    });
+    }, wrapperRef);
 
     return () => ctx.revert();
   }, []);
@@ -60,14 +59,16 @@ export default function Loader() {
   return (
     <div
       ref={wrapperRef}
-      className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-[var(--warm-white)]"
+      className="fixed inset-0 z-[9999] flex flex-col items-center justify-center min-h-screen bg-[var(--warm-white)]"
     >
-      <div className="relative w-32 h-32">
+      <div className="relative w-24 h-24 sm:w-32 sm:h-32">
         {/* Rings */}
         {Array.from({ length: 3 }).map((_, i) => (
           <div
             key={i}
-            ref={(el: HTMLDivElement | null): void => { ringRefs.current[i] = el }}
+            ref={(el: HTMLDivElement | null): void => {
+              ringRefs.current[i] = el;
+            }}
             className="absolute inset-0 rounded-full border-2 border-[var(--ethiopian-gold)]"
           />
         ))}
@@ -75,7 +76,7 @@ export default function Loader() {
         {/* Logo */}
         <div
           ref={logoRef}
-          className="absolute inset-4 flex items-center justify-center rounded-full bg-[var(--lake-blue)]"
+          className="absolute inset-3 sm:inset-4 flex items-center justify-center rounded-full bg-[var(--lake-blue)]"
         >
           <Image
             src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=128&q=60"
@@ -89,7 +90,7 @@ export default function Loader() {
       {/* Text */}
       <span
         ref={textRef}
-        className="mt-6 text-lg tracking-widest text-[var(--soft-gray)] font-['var(--font-roboto)']"
+        className="mt-4 text-base sm:text-lg tracking-widest text-[var(--soft-gray)] font-['var(--font-roboto)']"
       >
         Lake Bishoftu Resort
       </span>
