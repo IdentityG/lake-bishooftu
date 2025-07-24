@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
-import { Inter } from 'next/font/google';
+import type { Metadata } from 'next';
+import { Playfair_Display, Roboto } from 'next/font/google';
 import './globals.css';
-import { Playfair_Display, Roboto } from 'next/font/google';  
-import Navbar from "@/components/common/Navbar";
-import FooterSection from "@/components/common/FooterSection";
+import Navbar from '@/components/common/Navbar';
+import FooterSection from '@/components/common/FooterSection';
+import Loader from '@/components/common/Loader';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -23,7 +23,6 @@ export const metadata: Metadata = {
   description: 'Experience Ethiopian luxury at Lake Bishoftu Resort',
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -31,9 +30,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${playfair.variable} ${roboto.variable} antialiased`}
-      > 
+      <body className={`${playfair.variable} ${roboto.variable} antialiased`}>
+        <Loader />
         <Navbar />
         {children}
         <FooterSection />

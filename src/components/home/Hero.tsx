@@ -20,35 +20,35 @@ const slides: Slide[] = [
     bg: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80',
     title: 'Welcome to Lake Bishoftu Resort',
     subtitle: 'Where Ethiopian heritage meets timeless luxury',
-    color: '#1E3A8A',
+    color: '#F9FAFB',
   },
   {
     id: 2,
     bg: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1920&q=80',
     title: 'Serene Lakeside Views',
     subtitle: 'Wake up to the gentle embrace of Lake Bishoftu',
-    color: '#166534',
+    color: '#F9FAFB',
   },
   {
     id: 3,
-    bg: 'https://images.unsplash.com/photo-1566073771259-6a8506099825?auto=format&fit=crop&w=1920&q=80',
+    bg: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80',
     title: 'Luxury Redefined',
     subtitle: 'Indulge in world-class amenities and service',
-    color: '#D4A017',
+    color: '#F9FAFB',
   },
   {
     id: 4,
     bg: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1920&q=80',
     title: 'Cultural Immersion',
     subtitle: 'Experience authentic Ethiopian hospitality',
-    color: '#1E3A8A',
+    color: '#F9FAFB',
   },
   {
     id: 5,
     bg: 'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=1920&q=80',
     title: 'Unforgettable Moments',
     subtitle: 'Create memories that last a lifetime',
-    color: '#166534',
+    color: '#F9FAFB',
   },
 ];
 
@@ -245,7 +245,7 @@ export default function Hero() {
           <div
             key={index}
             ref={(el: HTMLDivElement | null): void => { rectRefs.current[index] = el }}
-            className="w-16 h-16 md:w-20 md:h-20 rounded-lg overflow-hidden cursor-pointer border-2 border-white/30 hover:border-white/60 transition-all duration-300"
+            className="w-16 h-16 md:w-20 md:h-20 rounded-lg overflow-hidden cursor-pointer border-2 border-[#D4A017] hover:border-white/60 transition-all duration-300"
             onClick={() => handleRectangleClick(index)}
           >
             <div
