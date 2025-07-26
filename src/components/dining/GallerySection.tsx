@@ -81,10 +81,10 @@ export default function GallerySection() {
           className="text-center mb-16"
         >
           <h2 className="font-playfair text-5xl md:text-7xl font-bold text-[#111827] mb-4">
-            Visual Journey
+            A Taste of Elegance
           </h2>
           <p className="text-xl text-[#6B7280] max-w-2xl mx-auto">
-            Step into moments of luxury, culture, and breathtaking natural beauty captured at Lake Bishoftu Resort.
+            Savor the art of Ethiopian fine dining — where rich flavors, warm ambiance, and lakeside charm come together in perfect harmony.
           </p>
         </motion.div>
 

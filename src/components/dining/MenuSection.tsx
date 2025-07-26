@@ -1,5 +1,4 @@
 'use client';
-
 import { useRef, useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { gsap } from 'gsap';
@@ -114,10 +113,10 @@ export default function MenuSection() {
   const [activeCategory, setActiveCategory] = useState('Breakfast');
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
-  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
+      // Animate only the title with GSAP ScrollTrigger
       gsap.from('.menu-title', {
         y: 100,
         opacity: 0,
@@ -128,23 +127,7 @@ export default function MenuSection() {
           start: 'top 80%',
         },
       });
-
-      cardsRef.current.forEach((card, index) => {
-        if (card) {
-          gsap.from(card, {
-            y: 100,
-            opacity: 0,
-            duration: 1,
-            delay: index * 0.1,
-            ease: 'power4.out',
-            scrollTrigger: {
-              trigger: card,
-              start: 'top 85%',
-            },
-          });
-        }
-      });
-    });
+    }, sectionRef);
 
     return () => ctx.revert();
   }, []);
@@ -153,9 +136,12 @@ export default function MenuSection() {
     <section ref={sectionRef} className="relative overflow-hidden bg-[#F9FAFB] py-20 px-4 sm:px-6 lg:px-8">
       {/* Background Pattern with Dark Overlay */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231E3A8A' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-        }} />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231E3A8A' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          }}
+        />
         <div className="absolute inset-0 bg-[#111827] opacity-50" />
       </div>
 
@@ -203,19 +189,16 @@ export default function MenuSection() {
 
         {/* Menu Items Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <AnimatePresence mode="wait">
+          <AnimatePresence mode="wait" initial={false}>
             {menuItems
               .find((cat) => cat.category === activeCategory)
               ?.items.map((item, index) => (
                 <motion.div
                   key={`${activeCategory}-${item.name}`}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.9 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  ref={(el: HTMLDivElement | null): void => {
-                    cardsRef.current[index] = el;
-                  }}
+                  initial={{ opacity: 0, y: 20, scale: 0.95 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: -20, scale: 0.95 }}
+                  transition={{ duration: 0.3, delay: index * 0.1 }}
                   onMouseEnter={() => setHoveredItem(item.name)}
                   onMouseLeave={() => setHoveredItem(null)}
                   className="group relative bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer"
@@ -225,7 +208,7 @@ export default function MenuSection() {
                     <img
                       src={item.image}
                       alt={item.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-br from-[#1E3A8A]/20 to-[#D4A017]/20" />
                     <motion.div
@@ -252,7 +235,7 @@ export default function MenuSection() {
                       </span>
                     </div>
                     <p className="text-[#6B7280] mb-4">{item.description}</p>
-                    
+
                     {/* Animated CTA */}
                     <motion.button
                       whileHover={{ scale: 1.05 }}
@@ -271,7 +254,7 @@ export default function MenuSection() {
 
                   {/* Hover Effect Border */}
                   <motion.div
-                    className="absolute inset-0 border-2 border-[#D4A017] rounded-2xl"
+                    className="absolute inset-0 border-2 border-[#D4A017] rounded-2xl pointer-events-none"
                     animate={{
                       opacity: hoveredItem === item.name ? 1 : 0,
                       scale: hoveredItem === item.name ? 1 : 0.9,
@@ -293,7 +276,6 @@ export default function MenuSection() {
             <h4 className="font-playfair text-xl font-bold mb-2">Hours</h4>
             <p className="text-[#6B7280]">Daily 6:00 AM - 10:00 PM</p>
           </motion.div>
-
           <motion.div
             whileHover={{ y: -5 }}
             className="bg-white rounded-2xl p-6 shadow-lg"
@@ -302,7 +284,6 @@ export default function MenuSection() {
             <h4 className="font-playfair text-xl font-bold mb-2">Location</h4>
             <p className="text-[#6B7280]">Main Restaurant & Lake Terrace</p>
           </motion.div>
-
           <motion.div
             whileHover={{ y: -5 }}
             className="bg-white rounded-2xl p-6 shadow-lg"

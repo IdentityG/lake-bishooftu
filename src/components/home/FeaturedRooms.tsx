@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -114,7 +115,7 @@ const FeaturedRooms = () => {
                   ))}
                 </ul>
 
-                <div className="mt-auto">
+                {/*<div className="mt-auto">
                   <motion.button
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}
@@ -122,7 +123,7 @@ const FeaturedRooms = () => {
                   >
                     Book Now <ArrowRight size={16} />
                   </motion.button>
-                </div>
+                </div> */}
               </div>
             </motion.article>
           ))}
@@ -136,6 +137,7 @@ const FeaturedRooms = () => {
           viewport={{ once: true }}
           className="text-center mt-14"
         >
+           <Link href="/rooms">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -143,6 +145,7 @@ const FeaturedRooms = () => {
           >
             View All Rooms
           </motion.button>
+          </Link>
         </motion.div>
       </div>
     </section>

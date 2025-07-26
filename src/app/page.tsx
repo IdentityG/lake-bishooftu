@@ -1,3 +1,4 @@
+import MenuDesign from "@/components/dining/MenuDesign";
 import AboutUsSection from "@/components/home/AboutSection";
 import ActivitiesAmenities from "@/components/home/ActivitiesAmenities";
 import CallToAction from "@/components/home/CallToAction";
@@ -9,7 +10,8 @@ import Hero from "@/components/home/Hero";
 import LocationMapSection from "@/components/home/MapSection";
 import MenuSection from "@/components/home/MenuSection";
 import SpecialOffersSection from "@/components/home/SpecialOffersSection";
-import TestimonialSection from "@/components/home/TestimonialSection";
+import TestimonialsSection from "@/components/home/TestimonialsSection";
+
 
 export default function Home() {
   return (
@@ -21,8 +23,9 @@ export default function Home() {
       <GallerySection />
       <ActivitiesAmenities />
       <MenuSection />
+      <MenuDesign />
       <SpecialOffersSection />
-      <TestimonialSection />
+      <TestimonialsSection />
       <LocationMapSection />
       <CallToAction />
       <ContactFormSection />
