@@ -102,20 +102,20 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm font-['Roboto']">
               {[
-                { name: 'About', href: '/about' },
-                { name: 'Rooms & Suites', href: '/rooms' },
-                { name: 'Dining', href: '/dining' },
-                { name: 'Spa', href: '/spa' },
-                { name: 'Offers', href: '/offers' },
-                { name: 'Gallery', href: '/gallery' },
+                { href: '/', label: 'Home' },
+                { href: '/about', label: 'About' },
+                { href: '/rooms', label: 'Rooms' },
+                { href: '/dining', label: 'Dining' },
+                { href: '/spa', label: 'Spa' },
+                { href: '/contact', label: 'Contact' },
               ].map((link, index) => (
                 <motion.li
-                  key={link.name}
+                  key={link.label}
                   ref={(el: HTMLLIElement | null): void => { linkRefs.current[index] = el }}
                   className="hover:text-[#D4A017] transition-colors duration-200"
                 >
                   <Link href={link.href} className="block">
-                    {link.name}
+                    {link.label}
                   </Link>
                 </motion.li>
               ))}
