@@ -47,7 +47,7 @@ const roomCategories: RoomCategory[] = [
     name: 'Royal Penthouse',
     description: 'Ultimate luxury with rooftop terrace, private pool, and dedicated butler service.',
     price: '$1,200',
-    image: 'https://images.unsplash.com/photo-1631049305487-5819d2e8cb6f?w=800&q=80',
+    image: '/images/r6.webp',
     features: [
       { icon: <Users className="w-4 h-4" />, text: 'Up to 8 guests' },
       { icon: <BedDouble className="w-4 h-4" />, text: 'Three bedrooms' },

@@ -76,7 +76,7 @@ export default function SustainabilityCommunitySection() {
             className="group relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-[#0f172a] px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
           >
             <img
-              src="https://images.unsplash.com/photo-1529156064428-4a6f334f95a9?auto=format&fit=crop&w=1080&q=80"
+              src="/images/1.avif"
               alt="Local artisans"
               className="absolute inset-0 -z-10 h-full w-full object-cover"
             />

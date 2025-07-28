@@ -13,7 +13,7 @@ const dining = [
   {
     name: 'Lakeview Terrace',
     tagline: 'Sunset Dining, Global Flavours',
-    img: '/images/dining-lakeview.jpg',
+    img: '/images/1.avif',
     desc: 'Open-air terrace with panoramic lake views, serving contemporary Ethiopian and international cuisine.',
     hours: '7:00 AM – 11:00 PM',
     cta: 'Discover Menu',
@@ -21,7 +21,7 @@ const dining = [
   {
     name: 'Kaffa Fire Grill',
     tagline: 'Flame-Kissed, Coffee-Infused',
-    img: '/images/dining-kaffa.jpg',
+    img: '/images/2.avif',
     desc: 'A sensory grill experience celebrating Ethiopia’s rich coffee heritage and bold local spices.',
     hours: '6:30 PM – 10:30 PM',
     cta: 'Reserve Table',
@@ -29,7 +29,7 @@ const dining = [
   {
     name: 'Bishoftu Bites',
     tagline: 'Casual, Artisanal, Fresh',
-    img: '/images/dining-bites.jpg',
+    img: '/images/3.jpg',
     desc: 'Light bites, handcrafted pastries, and specialty coffees for a relaxed lakeside afternoon.',
     hours: '8:00 AM – 6:00 PM',
     cta: 'View Offerings',

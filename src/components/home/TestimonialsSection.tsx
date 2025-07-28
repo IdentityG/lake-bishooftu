@@ -27,7 +27,7 @@ const reviews: Review[] = [
     location: 'Singapore',
     rating: 5,
     text: 'Lake Bishoftu Resort redefined luxury for me. The sunrise over the lake from my suite was pure magic—like watching the earth awaken in shades of gold and sapphire.',
-    image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80',
     stay: 'Lake View Suite • 4 nights'
   },
   {

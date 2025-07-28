@@ -12,28 +12,28 @@ const team = [
   {
     name: 'Selam Kebede',
     role: 'General Manager',
-    image: '/images/team-selam.jpg',
+    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80',
     bio: '25 years crafting luxury experiences across Africa.',
     socials: { linkedin: '#', mail: '#' },
   },
   {
     name: 'Michael Lemma',
     role: 'Executive Chef',
-    image: '/images/team-michael.jpg',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80',
     bio: 'Michelin-trained, rooted in Ethiopian spice trails.',
     socials: { linkedin: '#', mail: '#' },
   },
   {
     name: 'Hanna Tadesse',
     role: 'Wellness Director',
-    image: '/images/team-hanna.jpg',
+    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80',
     bio: 'Yoga master and herbalist, guardian of ancient rituals.',
     socials: { linkedin: '#', mail: '#' },
   },
   {
     name: 'Yonas Afework',
     role: 'Sustainability Lead',
-    image: '/images/team-yonas.jpg',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80',
     bio: 'Architect of zero-waste and rewilding programs.',
     socials: { linkedin: '#', mail: '#' },
   },
@@ -92,7 +92,7 @@ export default function TeamSection() {
               <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden">
                 {/* Image */}
                 <div className="relative aspect-[4/5]">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#1E3A8A] via-[#D4A017] to-[#166534]" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#6078b8] to-[#47a069]" />
                   <img
                     src={member.image}
                     alt={member.name}

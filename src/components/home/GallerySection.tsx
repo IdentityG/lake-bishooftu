@@ -11,15 +11,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 const images = [
   { id: 1, src: 'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=1920&q=80', alt: 'Lake sunrise', category: 'nature' },
-  { id: 2, src: 'https://images.unsplash.com/photo-1566073771259-6a8506099825?auto=format&fit=crop&w=1920&q=80', alt: 'Pool deck', category: 'amenities' },
+  { id: 2, src: '/images/5.webp', alt: 'Pool deck', category: 'amenities' },
   { id: 3, src: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1920&q=80', alt: 'Traditional coffee', category: 'culture' },
   { id: 4, src: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80', alt: 'Dining terrace', category: 'dining' },
-  { id: 5, src: '/images/gallery/5.jpg', alt: 'Room interior', category: 'rooms' },
-  { id: 6, src: '/images/gallery/6.jpg', alt: 'Volcano view', category: 'nature' },
-  { id: 7, src: '/images/gallery/7.jpg', alt: 'Spa sanctuary', category: 'amenities' },
-  { id: 8, src: '/images/gallery/8.jpg', alt: 'Night lights', category: 'ambiance' },
+  { id: 5, src: '/images/1.avif', alt: 'Room interior', category: 'rooms' },
+  { id: 6, src: '/images/2.avif', alt: 'Volcano view', category: 'nature' },
+  { id: 7, src: '/images/3.jpg', alt: 'Spa sanctuary', category: 'amenities' },
+  { id: 8, src: '/images/4.webp', alt: 'Night lights', category: 'ambiance' },
   { id: 9, src: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1920&q=80', alt: 'Resort exterior', category: 'architecture' },
-  { id: 10, src: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=1920&q=80', alt: 'Lakeside activities', category: 'activities' },
+  { id: 10, src: '/images/r7.jpg', alt: 'Lakeside activities', category: 'activities' },
 ];
 
 const categories = ['all', 'nature', 'amenities', 'culture', 'dining', 'rooms'];

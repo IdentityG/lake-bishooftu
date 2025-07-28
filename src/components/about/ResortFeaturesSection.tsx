@@ -13,25 +13,25 @@ const features = [
     icon: Bed,
     title: '50 Bespoke Villas & Suites',
     description: 'Each space frames the lake through floor-to-ceiling glass and hand-carved Ethiopian stone.',
-    image: '/images/villa.jpg',
+    image: '/images/r1.webp',
   },
   {
     icon: Coffee,
     title: 'Farm-to-Fork Dining',
     description: 'Three restaurants sourcing produce from our organic gardens and local cooperatives.',
-    image: '/images/dining.jpg',
+    image: '/images/1.avif',
   },
   {
     icon: Wind,
     title: 'Holistic Wellness',
     description: 'Overwater spa pavilions, open-air yoga decks, and sunrise meditation on the pier.',
-    image: '/images/spa.jpg',
+    image: '/images/3.jpg',
   },
   {
     icon: Waves,
     title: 'Lake Adventures',
     description: 'Private dhow cruises, crater kayaking, and bird-watching with our resident naturalist.',
-    image: '/images/adventure.jpg',
+    image: '/images/4.webp',
   },
 ];
 

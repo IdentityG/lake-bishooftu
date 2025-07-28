@@ -5,7 +5,7 @@ export const rooms = [
       "title": "Serene Single",
       "description": "The Serene Single room is a haven of peace designed for the discerning solo traveler. Nestled on the shores of Lake Bishoftu, this intimate retreat combines modern elegance with Ethiopian charm. The room features a plush queen-size bed draped in premium linens, hand-crafted furniture inspired by local artisans, and a private balcony offering uninterrupted views of the shimmering lake and lush gardens. The en-suite bathroom is equipped with a spacious walk-in shower, eco-friendly toiletries, and plush towels. Guests can enjoy high-speed Wi-Fi, a fully-stocked mini-bar, and a coffee & tea station, ensuring a seamless blend of comfort and convenience. The room’s serene ambiance is enhanced by soft lighting, warm earthy tones, and locally-sourced artwork, creating an inviting atmosphere perfect for relaxation or quiet reflection.",
       "price": 180,
-      "image": "/images/single.jpg",
+      "image": "/images/r7.jpg",
       "amenities": [
         "High-Speed Wi-Fi",
         "Climate Control",
@@ -39,7 +39,7 @@ export const rooms = [
       "title": "Grand Double",
       "description": "The Grand Double room is a spacious sanctuary crafted for couples seeking both elegance and comfort. Overlooking the lush gardens of our Lake Bishoftu resort, this room features a luxurious king-size bed adorned with premium linens, complemented by hand-crafted furniture that reflects Ethiopian craftsmanship. The private balcony invites you to enjoy serene garden views, while the en-suite bathroom offers a deep soaking tub, a rainfall shower, and eco-friendly toiletries. Guests benefit from high-speed Wi-Fi, a fully-stocked mini-bar, and a coffee & tea station. The room’s warm ambiance, accented by earthy tones and locally-inspired artwork, creates an inviting retreat perfect for romantic getaways or peaceful escapes.",
       "price": 250,
-      "image": "/images/double.jpg",
+      "image": "/images/r1.webp",
       "amenities": [
         "High-Speed Wi-Fi",
         "Climate Control",
@@ -70,7 +70,7 @@ export const rooms = [
       "title": "Harmony Standard",
       "description": "The Harmony Standard room offers a perfect blend of modern comfort and understated elegance, ideal for travelers seeking a balanced retreat. Overlooking the resort’s tranquil courtyard, this room features a comfortable queen-size bed with premium linens, accented by locally-inspired decor and hand-crafted furniture. The en-suite bathroom includes a spacious walk-in shower and eco-friendly toiletries. Guests can enjoy high-speed Wi-Fi, a fully-stocked mini-bar, and a coffee & tea station, ensuring all modern conveniences are at hand. The room’s warm, earthy tones and soft lighting create a cozy atmosphere, making it an ideal choice for those seeking both relaxation and functionality.",
       "price": 220,
-      "image": "/images/standard.jpg",
+      "image": "/images/r2.avif",
       "amenities": [
         "High-Speed Wi-Fi",
         "Climate Control",
@@ -100,7 +100,7 @@ export const rooms = [
       "title": "Imperial VIP",
       "description": "The Imperial VIP suite is the epitome of luxury, designed for those seeking an unparalleled experience. Situated with direct views of Lake Bishoftu, this expansive suite features a grand king-size bed with premium linens, bespoke furniture showcasing Ethiopian artistry, and a private plunge pool for ultimate relaxation. The en-suite bathroom boasts a deep soaking tub, a rainfall shower, and luxurious toiletries. Guests enjoy personalized butler service, high-speed Wi-Fi, a fully-stocked mini-bar, and a coffee & tea station. The suite’s sophisticated ambiance, with warm earthy tones and curated local artwork, creates a regal retreat that blends modern opulence with cultural heritage.",
       "price": 480,
-      "image": "/images/vip.jpg",
+      "image": "/images/r3.webp",
       "amenities": [
         "High-Speed Wi-Fi",
         "Climate Control",
@@ -132,7 +132,7 @@ export const rooms = [
       "title": "Family Haven",
       "description": "The Family Haven suite is a spacious retreat designed for families to connect and unwind. Overlooking the resort’s lush gardens, this suite features two queen-size beds with premium linens, a dedicated kids’ area with playful decor, and hand-crafted furniture reflecting Ethiopian heritage. The en-suite bathroom includes a spacious walk-in shower and eco-friendly toiletries. Guests enjoy high-speed Wi-Fi, a fully-stocked mini-bar, and a coffee & tea station, ensuring convenience for all. The suite’s warm, inviting ambiance, with earthy tones and locally-sourced artwork, creates a home-away-from-home perfect for family bonding and relaxation.",
       "price": 380,
-      "image": "/images/family.jpg",
+      "image": "/images/r4.webp",
       "amenities": [
         "High-Speed Wi-Fi",
         "Climate Control",

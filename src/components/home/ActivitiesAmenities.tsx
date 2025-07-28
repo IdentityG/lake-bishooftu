@@ -13,7 +13,7 @@ const activities = [
   {
     title: 'Sunrise Kayaking',
     icon: <Sailboat className="w-8 h-8" />,
-    img: '/images/activities/kayak.jpg',
+    img: '/images/1.avif',
     desc: 'Paddle across glass-still water as golden light spills over the crater rim.',
     duration: '2 hours',
     difficulty: 'Easy',
@@ -23,7 +23,7 @@ const activities = [
   {
     title: 'Trail Biking',
     icon: <Bike className="w-8 h-8" />,
-    img: '/images/activities/biking.jpg',
+    img: '/images/2.avif',
     desc: 'Ride forest trails that wind through volcanic hills and coffee groves.',
     duration: '3 hours',
     difficulty: 'Moderate',
@@ -33,7 +33,7 @@ const activities = [
   {
     title: 'Lake Swimming',
     icon: <Waves className="w-8 h-8" />,
-    img: '/images/activities/swim.jpg',
+    img: '/images/3.jpg',
     desc: 'Refresh in the mineral-rich, jade-green waters of Lake Bishoftu.',
     duration: 'All day',
     difficulty: 'Easy',
@@ -43,7 +43,7 @@ const activities = [
   {
     title: 'Traditional Coffee',
     icon: <HandHeart className="w-8 h-8" />,
-    img: '/images/activities/coffee.jpg',
+    img: '/images/4.webp',
     desc: 'Join a local host for an aromatic coffee ceremony beneath acacia trees.',
     duration: '1.5 hours',
     difficulty: 'Easy',
@@ -53,7 +53,7 @@ const activities = [
   {
     title: 'Fishing Excursion',
     icon: <Anchor className="w-8 h-8" />,
-    img: '/images/activities/fishing.jpg',
+    img: '/images/5.webp',
     desc: 'Cast a line for tilapia while kingfishers skim above the water.',
     duration: '4 hours',
     difficulty: 'Easy',
@@ -63,7 +63,7 @@ const activities = [
   {
     title: 'Group Yoga',
     icon: <Users className="w-8 h-8" />,
-    img: '/images/activities/yoga.jpg',
+    img: '/images/r1.webp',
     desc: 'Salute the sunrise on our lakeside deck with certified instructors.',
     duration: '1 hour',
     difficulty: 'All levels',
