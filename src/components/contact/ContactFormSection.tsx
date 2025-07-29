@@ -114,8 +114,9 @@ export default function ContactFormSection() {
           </motion.div>
 
           {/* Form Side */}
-          <motion.div ref={formRef}>
+          <motion.div>
             <form
+              ref={formRef}
               onSubmit={handleSubmit}
               className="space-y-6 bg-white rounded-2xl shadow-lg p-6 sm:p-8"
             >
